@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:minWidth="330dp"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_background"
+        android:layout_height="match_parent">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="32dp"
+            android:text="정말 계정을 삭제하시곘습니까?"
+            android:textSize="18dp"
+            android:layout_gravity="center"
+            android:textColor="#14151B"
+            android:textStyle="bold"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:paddingLeft="16dp"
+                  android:paddingRight="16dp"
+                  android:layout_marginBottom="16dp"
+                  android:orientation="horizontal">
+        <TextView
+                android:id="@+id/delete_no"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@drawable/button_background"
+                android:padding="12dp"
+                android:layout_height="wrap_content"
+                android:text="아니요"
+                android:textSize="16dp"
+                android:layout_marginRight="16dp"
+                android:textColor="#14151B"
+                android:textStyle="bold"/>
+        <TextView
+                android:id="@+id/delete_yes"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:gravity="center"
+                android:background="@drawable/button_background"
+                android:text="탈퇴 하겠습니다."
+                android:textSize="16dp"
+                android:textColor="#14151B"
+                android:textStyle="bold"/>
+
+
+    </LinearLayout>
+</LinearLayout>
