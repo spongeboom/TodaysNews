@@ -13,10 +13,10 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import com.bumptech.glide.Glide
+import com.weather.ksy.model.TotalWeather
 import kotlinx.android.synthetic.main.activity_open_weather.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -100,7 +100,7 @@ class OpenWeatherActivity : AppCompatActivity(), LocationListener {
 
     private fun requestWeatherInfoOfLocation(lat: Double, lon: Double) {
         // 사용자 위치 기반 날씨정보 가져오기
-        (application as WeatherApplication)
+        (application as ServiceApplication)
             .requestService()
             ?.getWeatherInfoOfCoordinates(
                 latitude = lat,

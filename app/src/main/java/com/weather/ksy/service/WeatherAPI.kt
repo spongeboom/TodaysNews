@@ -1,10 +1,11 @@
-package com.weather.ksy
+package com.weather.ksy.service
 
+import com.weather.ksy.model.TotalWeather
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-interface Service {
+interface WeatherAPI {
     @GET("/data/2.5/weather/")
     fun getWeatherInfoOfLocation(
         @Query("q" ) location: String,

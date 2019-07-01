@@ -41,7 +41,7 @@ class AccountSettingActivity : AppCompatActivity() {
         AccountDeleteDialog().apply {
             addAccountDeleteDialogInterface(object : AccountDeleteDialog.AccountDeleteDialogInterface{
                 override fun delete() {
-//                    deleteAccount()
+                    deleteAccount()
                 }
 
                 override fun cancelDelete() {

@@ -1,10 +1,10 @@
-package com.weather.ksy
+package com.weather.ksy.model
 
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
 class TotalWeather(
-    var main:Main? = null,
+    var main: Main? = null,
     @SerializedName("weather")
     var weatherList : ArrayList<Weather>? =null
 ): Serializable

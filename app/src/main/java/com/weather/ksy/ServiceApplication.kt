@@ -3,14 +3,16 @@ package com.weather.ksy
 import android.app.Application
 import com.facebook.stetho.Stetho
 import com.facebook.stetho.okhttp3.StethoInterceptor
+import com.weather.ksy.service.NewsAPI
+import com.weather.ksy.service.WeatherAPI
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class WeatherApplication : Application(){
+class ServiceApplication : Application(){
 
-    var service:Service? = null
-    var newsApi:NewsAPI? = null
+    var weatherAPI: WeatherAPI? = null
+    var newsApi: NewsAPI? = null
 
     override fun onCreate() {
         super.onCreate()
@@ -29,7 +31,7 @@ class WeatherApplication : Application(){
             .client(client)
             .build()
 
-        service = retrofit.create(Service::class.java)
+        weatherAPI = retrofit.create(WeatherAPI::class.java)
 
         val newsretrofit:Retrofit = Retrofit.Builder()
             .baseUrl("https://newsapi.org/")
@@ -39,8 +41,8 @@ class WeatherApplication : Application(){
         newsApi = newsretrofit.create(NewsAPI::class.java)
     }
 
-    fun requestService(): Service?{
-        return service
+    fun requestService(): WeatherAPI?{
+        return weatherAPI
     }
 
     fun requestNews(): NewsAPI? {
