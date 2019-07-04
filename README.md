@@ -13,4 +13,4 @@
     - 이미지 로딩 라이브러리
         Glide (서버에서 보내주는 이미지를 보여줄때 사용)
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=U6TIXF1g58E" frameborder="0" allowfullscreen></iframe>
+        [![Video Label](http://img.youtube.com/vi/uLR1RNqJ1Mw/0.jpg)](https://youtu.be/uLR1RNqJ1Mw?t=0s) Video Label
