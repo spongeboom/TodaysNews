@@ -117,8 +117,11 @@ class MainActivity : AppCompatActivity() {
                     val user = auth?.currentUser
                     moveToOpenWeatherActivity(user)
                 } else {
+                    login_progress_bar.visibility = View.GONE
                     Toast.makeText(this, task.exception.toString(), Toast.LENGTH_SHORT).show()
                 }
+            }?.addOnCanceledListener {
+                login_progress_bar.visibility = View.GONE
             }
     }
 
@@ -134,5 +137,6 @@ class MainActivity : AppCompatActivity() {
         super.onStart()
         moveToOpenWeatherActivity(auth?.currentUser)
     }
+
 
 }

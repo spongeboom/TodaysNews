@@ -52,6 +52,6 @@ class AccountSettingActivity : AppCompatActivity() {
 
     private fun moveToMainActivity(){
         startActivity(Intent(this,MainActivity::class.java))
+        finish()
     }
-
 }

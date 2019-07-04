@@ -13,9 +13,11 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import com.bumptech.glide.Glide
+import com.google.firebase.auth.FirebaseAuth
 import com.weather.ksy.model.TotalWeather
 import kotlinx.android.synthetic.main.activity_open_weather.*
 import retrofit2.Call
@@ -40,6 +42,19 @@ class OpenWeatherActivity : AppCompatActivity(), LocationListener {
         }
         news_go.setOnClickListener {
             startActivity(Intent(this, NewsActivity::class.java))
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        getLocationInfo()
+    }
+
+    override fun onStart() {
+        super.onStart()
+        if (FirebaseAuth.getInstance().currentUser == null){
+            finish()
+            startActivity(Intent(this, MainActivity::class.java))
         }
     }
 
@@ -86,6 +101,7 @@ class OpenWeatherActivity : AppCompatActivity(), LocationListener {
                 val lat = location.latitude
                 val lon = location.longitude
                 requestWeatherInfoOfLocation(lat = lat, lon = lon)
+                Log.d("TEST","have")
             } else {  // 없으면 새로 요청
                 locationManager.requestLocationUpdates(
                     LocationManager.NETWORK_PROVIDER,
@@ -93,6 +109,7 @@ class OpenWeatherActivity : AppCompatActivity(), LocationListener {
                     0F,
                     this
                 )
+                Log.d("TEST","dont have")
                 locationManager.removeUpdates(this)
             }
         }
@@ -100,6 +117,7 @@ class OpenWeatherActivity : AppCompatActivity(), LocationListener {
 
     private fun requestWeatherInfoOfLocation(lat: Double, lon: Double) {
         // 사용자 위치 기반 날씨정보 가져오기
+        Log.d("TEST",lat.toString() + ":" + lon.toString())
         (application as ServiceApplication)
             .requestService()
             ?.getWeatherInfoOfCoordinates(

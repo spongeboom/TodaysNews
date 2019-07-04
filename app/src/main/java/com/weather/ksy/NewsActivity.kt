@@ -16,6 +16,7 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import com.bumptech.glide.Glide
+import com.google.firebase.auth.FirebaseAuth
 import com.weather.ksy.model.TotalNews
 import kotlinx.android.synthetic.main.activity_news.*
 import kotlinx.android.synthetic.main.news_items.view.*
@@ -30,6 +31,14 @@ class NewsActivity : AppCompatActivity(), SwipeRefreshLayout.OnRefreshListener {
     private var newsList: ArrayList<TotalNews.Articles>? = null
     private var adapter:newsRecyclerViewAdapter? = null
     private var selectMode = 0
+
+    override fun onStart() {
+        super.onStart()
+        if (FirebaseAuth.getInstance().currentUser == null){
+            finish()
+            startActivity(Intent(this, MainActivity::class.java))
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
