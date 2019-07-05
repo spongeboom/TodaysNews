@@ -13,4 +13,7 @@
     - 이미지 로딩 라이브러리
         Glide (서버에서 보내주는 이미지를 보여줄때 사용)
 
+
+
+### 어플 시연 영상
 [![IMAGE ALT TEXT](https://img.youtube.com/vi/U6TIXF1g58E/0.jpg)](http://www.youtube.com/watch?v=U6TIXF1g58E "어플 시연 영상")
