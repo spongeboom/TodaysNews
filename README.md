@@ -6,11 +6,14 @@
 ##### 이메일 로그인
 이메일 주소와 비밀번호로 사용자를 인증하는 방법
 Firebase 인증 SDK를 사용
-![emaillogin](./app/src/main/res/drawable/emaillogin.png)
 
 ##### 구글 로그인
 Google 계정으로 로그인을해 OAuth 토큰을 받아 사용자를 인증하는 방법
-![googlelogin](./app/src/main/res/drawable/googlelogin.png)
+
+
+<img width="200px" height="300px" alt="email" src="./app/src/main/res/drawable/emaillogin.png"></img> <img width="200px" height="300px" alt="google" src="./app/src/main/res/drawable/googlelogin.png"></img>
+
+
 
 ###### Firebase Authentication 유저 관리 페이지
 
