@@ -15,7 +15,7 @@ Google 계정으로 로그인을해 OAuth 토큰을 받아 사용자를 인증�
 
 
 
-###### Firebase Authentication 유저 관리 페이지
+#### Firebase Authentication 유저 관리 페이지
 
 신규회원이 회원가입을 하게 되면 Firebase Authentication에 유저정보가 추가
 되고 인증이 된 사용자를 Firebase console 에서 대쉬보드 형태로 볼수 있다.
