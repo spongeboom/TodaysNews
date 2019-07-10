@@ -66,6 +66,9 @@ Google 계정으로 로그인을해 OAuth 토큰을 받아 사용자를 인증�
         OpenWeatherAPI ( 날씨 정보 OpenWeatherMap API : https://openweathermap.org/ )
         NewsAPI ( 뉴스 정보 News API : https://newsapi.org/ )
 
+    - Debugging
+        Stetho(Facebook) : 네트워크 상태를 쉽게 확인하기 위해 사용
+
 
 ### 어플 시연 영상
 [![IMAGE ALT TEXT](https://img.youtube.com/vi/U6TIXF1g58E/0.jpg)](http://www.youtube.com/watch?v=U6TIXF1g58E "어플 시연 영상")
