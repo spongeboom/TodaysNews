@@ -12,7 +12,7 @@
 
    서버 응답(Json)
 
-      <img width="400px" height="300px" src="./app/src/main/res/drawable/openweatherRes.png"></img>
+    ![openweatherRes](./app/src/main/res/drawable/openweatherRes.png)
 
   [Sample URL](https://samples.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=b6907d289e10d714a6e88b30761fae22)
 
@@ -22,7 +22,7 @@
 
   서버 응답(Json)
 
-  <img width="400px" height="300px" src="./app/src/main/res/drawable/newsapicategoryRes.png"></img>
+  ![categoryRes](./app/src/main/res/drawable/newsapicategoryRes.png)
 
   [Sample URL( 카테고리 : business )](https://newsapi.org/v2/top-headlines?country=kr&category=business&apiKey=ec4c02f7e056430bb7cc71878bca7a01)
 
@@ -30,7 +30,7 @@
 
   서버 응답(Json, 검색 키워드 = "북한" )
 
-  <img width="400px" height="200px" src="./app/src/main/res/drawable/newsapikeywordRes.png"></img>
+  ![keywordRes](./app/src/main/res/drawable/newsapikeywordRes.png)
 
   [Sample URL( 키워드 : 북한 )](https://newsapi.org/v2/top-headlines?country=kr&q=%EB%B6%81%ED%95%9C&apiKey=ec4c02f7e056430bb7cc71878bca7a01)
 
