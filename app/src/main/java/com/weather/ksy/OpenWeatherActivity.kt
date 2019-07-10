@@ -101,7 +101,7 @@ class OpenWeatherActivity : AppCompatActivity(), LocationListener {
                 val lat = location.latitude
                 val lon = location.longitude
                 requestWeatherInfoOfLocation(lat = lat, lon = lon)
-                Log.d("TEST","have")
+
             } else {  // 없으면 새로 요청
                 locationManager.requestLocationUpdates(
                     LocationManager.NETWORK_PROVIDER,
@@ -109,7 +109,6 @@ class OpenWeatherActivity : AppCompatActivity(), LocationListener {
                     0F,
                     this
                 )
-                Log.d("TEST","dont have")
                 locationManager.removeUpdates(this)
             }
         }
@@ -117,7 +116,6 @@ class OpenWeatherActivity : AppCompatActivity(), LocationListener {
 
     private fun requestWeatherInfoOfLocation(lat: Double, lon: Double) {
         // 사용자 위치 기반 날씨정보 가져오기
-        Log.d("TEST",lat.toString() + ":" + lon.toString())
         (application as ServiceApplication)
             .requestService()
             ?.getWeatherInfoOfCoordinates(
