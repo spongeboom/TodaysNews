@@ -3,16 +3,12 @@
  APP입니다.
 
 #### OpenWeatherMap API
+### API 호출방식
+- 카테고리별 뉴스 요청 ( Get ) : https://newsapi.org/v2/top-headlines?country=kr&category=category&apiKey=apiKey
 
-  ###### API 호출방식
+서버 응답(Json)
 
-  - 위치기반 날씨정보 요청( Get )
-
-    request URL : https://api.openweathermap.org/data/2.5/weather?lat=latitude&lon=logitude&appid=APPID
-
-   서버 응답(Json)
-
-    ![openweatherRes](./app/src/main/res/drawable/openweatherRes.png)
+![openweatherRes](./app/src/main/res/drawable/openweatherRes.png)
 
   [Sample URL](https://samples.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=b6907d289e10d714a6e88b30761fae22)
 
