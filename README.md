@@ -5,14 +5,12 @@
 
 ## OpenWeatherMap API
   ### API 호출방식
-
   - 위치기반 날씨정보 요청( Get )
       request URL : https://api.openweathermap.org/data/2.5/weather?lat=latitude&lon=logitude&appid=APPID
 
    서버 응답(Json)
 
       <img width="400px" height="300px" src="./app/src/main/res/drawable/openweatherRes.png"></img>
-
 
   [Sample URL](https://samples.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=b6907d289e10d714a6e88b30761fae22)
 
