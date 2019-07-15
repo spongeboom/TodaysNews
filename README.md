@@ -29,9 +29,10 @@
   ### 어플 시연 영상
   [![IMAGE ALT TEXT](https://img.youtube.com/vi/U6TIXF1g58E/0.jpg)](http://www.youtube.com/watch?v=U6TIXF1g58E "어플 시연 영상")
 
-  ## 3.API
 
- #### OpenWeatherMap API
+## 3.API
+
+ ### - OpenWeatherMap API
 
   - **사용자 위치기반 날씨 요청 ( Get )** : https://api.openweathermap.org/data/2.5/weather?lat=latitude&lon=logitude&appid=APPID
 
@@ -44,7 +45,7 @@
    [Sample URL](https://samples.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=b6907d289e10d714a6e88b30761fae22)
 
 
- #### News API
+ ### - News API
 
    - **카테고리별 뉴스 요청( Get )**  : https://newsapi.org/v2/top-headlines?country=kr&category=category&apiKey=apiKey
 
@@ -136,7 +137,7 @@
 
    <img width="300px" height="400px" alt="news" src="./app/src/main/res/drawable/contents.png"></img>
 
-  한개의 기사가 담겨져 있는 __CardView__ 를 터치하면 기사원문을 볼수 있는 View로 이동한다( WebView 형태로 기사를 볼수 있게 구성 )
+  한개의 기사가 담겨져 있는 __CardView__ 를 터치하면 기사원문을 볼수 있는 Activity 로 이동한다( WebView 형태로 기사를 볼수 있게 구성 )
 
   - **새로 고침**
 
