@@ -50,7 +50,7 @@
 
    URL 쿼리 파라미터의 값으로 기사 category의 값을 담아 서버의 요청을 보내면 해당 category 관련 기사만 서버에서 전송 해준다.
 
-    **서버 응답 형태(Json)**
+  **서버 응답 형태(Json)**
 
    ![categoryRes](./app/src/main/res/drawable/newsapicategoryres.png)
 
@@ -62,7 +62,7 @@
    URL 쿼리 파라미터의 값으로 키워드 검색을 할 수 있고 서버는 해당 키워드에 맞는
    기사들만 보내준다.
 
-    **서버 응답 형태(Json, 검색 키워드 = "북한" )**
+  **서버 응답 형태(Json, 검색 키워드 = "북한" )**
 
    ![keywordRes](./app/src/main/res/drawable/newsapikeywordres.png)
 
