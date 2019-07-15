@@ -1,5 +1,5 @@
 # TodaysNews
---------
+
   ## 1. 개요
 
     오늘의 날씨 와 뉴스를 조회 할 수 있는 Android 어플 "오늘의 날씨" 입니다.
@@ -12,7 +12,7 @@
   - 외부 라이브러리 :
 
     |  <center>Tool</center> |  <center>사용 목적</center> |  <center>Version</center> |
-    |:--------|:--------:|--------:|
+    |:--------:|:--------:|:--------:|
     |**firebase-auth / play-services-auth** | <center>사용자 인증(이메일 로그인, 구글 로그인) Firebase 인증방식과 통합하기 위해 gms-service-auth 라이브러리 추가 </center> |*firebase-auth:16.0.5 / play-services-auth:16.0.1* |
     |**Retrofit2** | <center>API 호출(OpenWeather API 와 News API 호출하기 위해 사용)</center> |*2.5.0* |
     |**Glide** | <center>서버에서 보내주는 이미지를 보여주기 위해 사용</center> |*4.9.0* |
@@ -20,7 +20,7 @@
 
   - 사용된 API:
 
-      | <center>API</center> | Web Site |
+      | <center>API</center> | <center>Web Site</center> |
       |:--------------------:|:--------:|
       |OpenWeatherMap API( 날씨 정보 )| https://openweathermap.org/ |
       |News API( 뉴스 정보 ) | https://newsapi.org/ |
