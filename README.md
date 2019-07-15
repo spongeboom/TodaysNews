@@ -136,7 +136,7 @@
 
    <img width="300px" height="400px" alt="news" src="./app/src/main/res/drawable/contents.png"></img>
 
-    한개의 기사가 담겨져 있는 __CardView__를 터치하면 기사원문을 볼수 있는 View로 이동한다( WebView 형태로 기사를 볼수 있게 구성 )
+  한개의 기사가 담겨져 있는 __CardView__ 를 터치하면 기사원문을 볼수 있는 View로 이동한다( WebView 형태로 기사를 볼수 있게 구성 )
 
   - **새로 고침**
 
