@@ -27,7 +27,7 @@
 
 
   ### 어플 시연 영상
-  [![IMAGE ALT TEXT](https://img.youtube.com/vi/U6TIXF1g58E/0.jpg)](http://www.youtube.com/watch?v=U6TIXF1g58E "어플 시연 영상")
+  [![IMAGE ALT TEXT](https://img.youtube.com/vi/3ZAgW2KoBS0/0.jpg)](http://www.youtube.com/watch?v=3ZAgW2KoBS0 "어플 시연 영상")
 
 
 ## 3.API
